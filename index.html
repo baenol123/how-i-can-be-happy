@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>EBSi 국가대표 고교강의</title>
+  <link rel="shortcut icon" href="https://image.ebsi.co.kr/ebsi/images/favi_ebsi.ico" type="image/x-ico">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Search and Play Songs</h1>
+    <form onsubmit="searchSong(event)">
+      <label for="search-input">Enter Song Name:</label>
+      <input type="text" id="search-input" name="search-input" required>
+      <button type="submit">Search</button>
+    </form>
+  </header>
+  <main>
+    <article id="song">
+      <h2>Playing Song: <span id="song-title"></span></h2>
+      <audio controls>
+        <source id="audio-source" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+      <p id="song-artist"></p>
+      <p id="song-album"></p>
+    </article>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
